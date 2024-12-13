@@ -1,7 +1,12 @@
 import React from 'react';
 
 const Button = () => {
-    return <button>Click Me</button>;
+    const handleClick = () => {
+        alert('Button clicked!');
+    };
+
+    return <button onClick={handleClick}>Click Me</button>;
 };
 
 export default Button;
+
